@@ -6,6 +6,11 @@ $(document).ready(function(){
   $('.expand').click(function(){
     $('.o-app').toggleClass('expand-main');
   });
+
+  $('.dropdown-nav').hide();
+  $('.nav-header').click(function(){
+    $(this).next().slideToggle();
+  })
 });
 
 

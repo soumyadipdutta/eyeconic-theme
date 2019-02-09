@@ -4,7 +4,8 @@
 	position: fixed;
 	min-width: 20%;
 	height: 100%;
-	background-color: #ff0000;
+	background-color: #fff;
+	border-right: 1px solid #ddd;
 	overflow-y: auto;
 	transition: all 500ms;
 }
@@ -13,6 +14,39 @@
 	margin-left: 20%;
 	transition: all 500ms;
 }
+
+
+
+/*Sidebar Navigation*/
+.c-sidebar{
+	&__nav{
+		padding: 15px;
+		&-list{
+			.nav-header{
+				font-family: $font-secondary;
+				display: block;
+				color: $blue-medium;
+				font-size: 12px;
+				font-weight: $base-font-weight + 600;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+			.dropdown-nav{
+				margin: 10px 0;
+				li{
+					a{
+						font-family: $font-secondary;
+						color: $blue-light;
+						padding: 5px 0;
+						font-size: 14px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 
 .o-app{
