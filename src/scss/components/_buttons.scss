@@ -26,57 +26,32 @@
     }
 }
 
-//For Capitalize Button
-.btn-capitalize{
-    text-transform: uppercase;
-}
 
-//Small Button
-.btn-small{
-    font-size: $base-font-size - 3;
-    padding: 2px 11px;
-}
+/*Tag*/
+.c-tag{
+    background-color: rgba(219, 225, 230, 0.4);
+    border-radius: 45px;
+    padding: 6px 9px 7px 9px;
+    font-size: 12px;
+    color: #657A8F;
+    font-weight: 600;
+    display: inline-block;
+    i{
+        background-color: #DBE1E6;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 8px;
+        margin-right: 5px;
+    }
 
-//Button Brand
-.btn-brand{
-    background-color: $brand;
-    color: $white; 
-    border: 2px solid $brand;
-}
-.btn-white{
-    background-color: $white;
-    color: $brand; 
-    border: 2px solid $white;
-    &:hover{
-        border: 2px solid $brand;
-    }
-}
-.btn-white--border{
-    background-color: transparent;
-    color: $white; 
-    border: 2px solid $white;
-    &:hover{
-        border: 2px solid $brand;
-    }
-}
-//Blue OutLine
-.btn-outline-blue{
-    border: 2px solid $brand;
-    color: $brand;
-    background-color: $white;  
-    &:hover{
-        border: 2px solid $brand-alt;
-        background: $brand-alt;
-        color: $white;
+    &.green{
+        background-color: #CBF5CF;
+        color: #00B30F;
+        i{
+           
+            background-color: rgba(96, 229, 84, 0.3);
+
+        }
     }
 }
 
-.btn-outline-white{
-    border: 2px solid $white;
-    color: $white;
-    background-color: transparent;  
-    &:hover{
-        background-color: $white;
-        color: $brand;
-    }
-}

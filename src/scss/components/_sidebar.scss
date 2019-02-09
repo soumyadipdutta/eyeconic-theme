@@ -20,8 +20,8 @@
 /*Sidebar Navigation*/
 .c-sidebar{
 	&__nav{
-		padding: 15px;
 		&-list{
+
 			.nav-header{
 				font-family: $font-secondary;
 				display: block;
@@ -31,6 +31,8 @@
 				text-transform: uppercase;
 				margin-bottom: 10px;
 				position: relative;
+				padding-left: 15px;
+				padding-right: 15px;
 				span{
 					content: "/f107";
 				    font-family: "Font Awesome 5 Free";
@@ -46,12 +48,18 @@
 			.dropdown-nav{
 				margin: 10px 0;
 				li{
+					padding-left: 15px;
+					padding-right: 15px;
 					a{
 						font-family: $font-secondary;
 						color: $blue-light;
 						padding: 5px 0;
 						font-size: 14px;
 						font-weight: 400;
+					}
+					&:hover{
+						background-color: rgba(28, 113, 213, 0.2);
+						border-left: 2px solid $blue-medium;
 					}
 				}
 			}
