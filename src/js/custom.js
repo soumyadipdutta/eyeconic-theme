@@ -3,7 +3,7 @@
 /****************/
 
 $(document).ready(function(){
-  $('.expand').click(function(){
+  $('.c-hambarger').click(function(){
     $('.o-app').toggleClass('expand-main');
   });
 

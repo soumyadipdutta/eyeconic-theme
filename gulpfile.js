@@ -32,8 +32,6 @@ gulp.task('fntmin', function () {
 gulp.task('jsminify', function(){
   gulp.src([
     	'./src/js/jquery.min.js',
-    	'./src/js/slick.min.js',
-      './src/js/jquery.mmenu.js',
     	'./src/js/custom.js'
   	])
   	.pipe(concat('main.js'))

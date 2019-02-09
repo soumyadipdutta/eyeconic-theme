@@ -30,6 +30,18 @@
 				font-weight: $base-font-weight + 600;
 				text-transform: uppercase;
 				margin-bottom: 10px;
+				position: relative;
+				span{
+					content: "/f107";
+				    font-family: "Font Awesome 5 Free";
+				    font-weight: 900;
+				    position: absolute;
+				    top: 50%;
+				    right: 20px;
+				    -webkit-transform: translate(0, -50%);
+				    transform: translate(0, -50%);
+				    font-size: 12px;
+				}
 			}
 			.dropdown-nav{
 				margin: 10px 0;

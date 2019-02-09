@@ -222,45 +222,6 @@ button{
   color: $white;
 }
 
-
-//Custom Background
-.c-colorbg{
-    background-color: $off-white;
-}
-
-//Section Spacing
-.o-section{
-  padding: 60px 0;
-  h2{
-      margin-bottom: 32px;
-      color: $brand-alt;
-      span{
-        font-weight: $font-bold;
-      }
-  }
-}
-
-//Listing graphics
-.u-graphic{
-  li{
-    display: block;
-    color: $brand;
-    line-height: $base-line-height + 2;
-    &:before{
-      content: " ";
-      background-image: url(../images/list-mask.png);
-      height: 8px;
-      width: 13px;
-      display: inline-block;
-      background-repeat: no-repeat;
-    }
-    span{
-      color: $gray;
-    }
-  }
-}
-
-//Off White Background
-.u-background-off{
-  background-color: $off-white;
+.o-app{
+  background-color: $extra-light-blue;
 }
