@@ -47,9 +47,9 @@ gulp.task('imgmin', function(){
 });
 
 
-gulp.task('default', ['html', 'mainStyle', 'jsminify'], function() {
+gulp.task('default', ['html', 'mainStyle', 'jsminify', 'imgmin'], function() {
    gulp.watch(['src/*.html','src/scss/**/*.scss','src/fonts/*','src/js/*.js','src/images/*'], function() {
-      gulp.run('html','mainStyle','jsminify');
+      gulp.run('html','mainStyle','jsminify','imgmin');
    });
 });
 
