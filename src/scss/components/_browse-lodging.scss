@@ -1,0 +1,81 @@
+//Call to Action Section
+
+.c-browse{
+	padding-top: 15px;
+	padding-bottom: 60px;
+	&__content{
+		h3{
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+		ul{
+			li{
+				line-height: $base-line-height + 4;
+				a{
+					color: $brand;
+					font-weight: $font-bold;
+					&:hover{
+						color: $brand-alt;
+						text-decoration: none;
+					}
+
+				}
+				span{
+					font-weight: $font-regular;
+				}
+			}
+		}
+		.btn{
+			margin-right: 10px;
+			margin-bottom: 10px;
+			padding: 4px 16px;
+			@include media-breakpoint(small) {
+				margin-right: 2px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+//Get Code Section
+.c-getcode{
+	margin-top: -70px;
+	background: url('../images/bg_girl_smiling_with_snowboard.jpg') #ffffff;
+	padding: 25px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include box-shadow(0, 0, $box-shadow-4, $box-shadow-color);
+	@include media-breakpoint(mobile-big) {
+		padding: 45px;
+	}
+	@include media-breakpoint(small) {
+		background-position: bottom right;
+		padding: 60px 58px;
+	}
+	@include media-breakpoint(tab-mini) {
+		margin-top: -150px;
+	}
+	h2{
+		padding-right: 50px;
+		margin-bottom: 25px;
+	}
+	p{
+		padding-right: 102px;
+		font-weight: $font-bold;
+		margin-bottom: 20px;
+	}
+	.btn-blue{
+		text-transform: uppercase;
+	}
+	span{
+		display: block;
+		margin-top: 10px;
+		font-weight: $font-bold;
+		color: #515151;
+		a{
+			display: block;
+			color: $brand;
+		}
+	}
+}

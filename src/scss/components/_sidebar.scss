@@ -1,0 +1,29 @@
+/*SIDEBAR*/
+
+.c-sidebar{
+	position: fixed;
+	min-width: 20%;
+	height: 100%;
+	background-color: #ff0000;
+	overflow-y: auto;
+	transition: all 500ms;
+}
+
+.c-mainapp{
+	margin-left: 20%;
+	transition: all 500ms;
+}
+
+
+.o-app{
+	&.expand-main{
+		.c-sidebar{
+			min-width: 65px;
+			transition: all 500ms;
+		}
+		.c-mainapp{
+			margin-left: 65px;
+			transition: all 500ms;
+		}
+	}
+}

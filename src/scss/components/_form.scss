@@ -1,0 +1,84 @@
+//Global Button Style
+
+.u-form{
+	background-color: $off-white;
+	padding-bottom: 40px;
+	@include media-breakpoint(small){
+		padding-bottom: 0px;
+	}
+	&__section{
+		margin-bottom: 50px;
+	}
+	&__title{
+		position: relative;
+		margin-bottom: 15px;
+		&:before{
+			content: " ";
+			background-color: $brand;
+			height: 2px;
+		    min-width: 100%;
+		    display: block;
+		    position: absolute;
+		    top: 13px;
+		}
+		h4{
+			background: $off-white;
+		    display: inline-block;
+		    padding: 0 15px 0 0px;
+		    position: relative;
+		    font-weight: $font-bold;
+		}
+	}
+	&__body{
+		> .row{
+			margin-bottom: 0px;
+			@include media-breakpoint(small){
+				margin-bottom: 15px;
+			}
+		}
+
+		h4{
+			margin-top: 35px;
+			margin-bottom: 15px;
+			font-weight: $font-bold;
+		}
+
+		.dropdown-toggle{
+			background-color: $white;
+		    border-radius: 3px;
+		    width: 100%;
+		    @include box-shadow(0, 0, $box-shadow-2, $box-shadow-color);
+		    font-size: $base-font-size;
+		    border: none;
+		    font-weight: $font-bold;
+		    padding: 8px 14px;
+		    color: $placeholder;
+		    text-align: left;
+		    @include media-breakpoint(small){
+				font-size: $base-font-size + 4;
+			}
+			&:after{
+				content: " "; 
+				float: right;
+				margin-top: 10px;
+				@include media-breakpoint(small){
+					margin-top: 12px;
+				}
+			}
+		}
+	}
+	label{
+		font-size: $base-font-size - 4;
+		text-transform: uppercase;
+		color: $brand;
+		font-weight: $font-bold;
+		margin-bottom: 8px;
+		@include media-breakpoint(small){
+			margin-bottom: 3px;
+		}
+	}
+
+}
+
+
+

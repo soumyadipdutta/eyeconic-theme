@@ -1,0 +1,70 @@
+/*
+	helpers
+	--> variables
+	--> functions
+	--> mixins
+*/
+@import "helpers/color";
+@import "helpers/variables";
+@import "helpers/mixin";
+
+
+// vendors
+//@import "vendors/bootstrap";
+@import "vendors/slick/slick";
+@import "vendors/slick/slick-theme";
+// @import "vendors/fontAwesome/font-awesome";
+// @import "vendors/mmenu/mmenu";
+
+
+/*
+	base
+	--> reset
+	--> typography
+	--> color
+*/
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
+
+/*
+	components
+	--> buttons
+	--> navigation
+
+*/
+
+@import "components/main";
+@import "components/navigation";
+@import "components/search";
+@import "components/browse-lodging";
+@import "components/featured";
+@import "components/buttons";
+@import "components/ui-guide";
+@import "components/input";
+@import "components/form";
+
+@import "components/sidebar";
+
+
+
+/*
+	layout
+	--> header
+	--> sidebar
+*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
+/*
+	Pages
+*/
+@import "page/property";
+@import "page/home";
+@import "page/search-result";
+
+/*
+  Additional
+*/
+//@import "base/additional";

@@ -1,0 +1,277 @@
+//SEARCH SECTION
+.c-search{
+	border-radius: 4px;
+	margin-top: 40px;
+	@include media-breakpoint(small){
+    	background-color: $white;
+	}
+	.row{
+		>div{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	p{
+		font-size: $base-font-size - 3;
+		margin-bottom: 0px;
+		color: #909090;
+		font-weight: $font-bold;
+		line-height: $base-line-height - 11;
+		margin-bottom: 4px;
+	}
+	h4{
+		font-size: $base-font-size;
+		line-height: $base-line-height - 6;
+		color: $brand-alt;
+		margin-bottom: 0px;
+		@include media-breakpoint(small){
+			line-height: $base-line-height;
+		}
+		@include media-breakpoint(tab-mini){
+			font-size: $base-font-size + 8;
+		}
+	}
+	&__area{
+		padding: 15px 19px;
+		border-right: 1px solid #EFEFEF;
+		position: relative;
+		cursor: pointer;
+		.available-option{
+			display: none;
+		}
+		&.destination{
+			position: relative;
+			padding: 10px 19px;
+			background-color: $white;
+			width: 100%;
+			margin-bottom: 10px;
+			border-top-left-radius: 2px;
+			border-bottom-left-radius: 2px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+			@include media-breakpoint(small){
+		    	margin-bottom: 0px;
+		    	border-top-right-radius: 0px;
+				border-bottom-right-radius: 0px;
+				padding: 15px 19px;
+			}
+			@include media-breakpoint(small){
+				width: 100%;
+				margin-bottom: 0px;
+			}	
+			h4{
+				@include media-breakpoint(small){
+			    	display: none;
+				}
+				@include media-breakpoint(small){
+					display: block;
+				}
+			}
+			.down-arrow{
+				@include media-breakpoint(small){
+					top: 11px;
+				}
+				@include media-breakpoint(small){
+					top: 30px;
+				}
+			}
+		}
+
+		&.person{
+			background-color: $white;
+			display: inline-block;
+			padding: 10px 43px 7px 19px;
+		    border-radius: 2px;
+		    margin-left: 5px;
+			@include media-breakpoint(small){
+				padding: 15px 19px;
+				display: block;
+				border-radius: 0px;
+				margin-left: 0px;
+			}
+			p{
+				.deskuop-text{
+					display: none;
+					@include media-breakpoint(small){
+						display: block;
+					}
+				}
+				.mobile-text{
+					display: block;
+					color: $brand;
+					font-weight: $font-bold;
+					@include media-breakpoint(mobile-big){
+						color: $gray;
+					}
+					@include media-breakpoint(small){
+						display: none;
+					}
+				}
+			}
+			.down-arrow{
+				top: 9px;
+   				right: 14px;
+				@include media-breakpoint(small){
+					top: 30px;
+					right: 30px;
+				}
+			}
+
+		}
+
+
+		&.date{
+			background-color: $white;
+			display: inline-block;
+		    padding: 10px 43px 7px 19px;
+		    border-radius: 2px;
+		    float: right;
+    		margin-right: 5px;
+		    @include media-breakpoint(mobile-big){
+		    	margin-right: 0px;
+		    	border-radius: 0px;
+		    	padding: 9px 45px 8px 20px;
+			}
+			@include media-breakpoint(small){
+				display: block;
+				border-radius: 0px;
+				float: none;
+    			margin-right: 0px;
+    			border-radius: 2px;
+    			padding: 15px 30px 15px 20px;
+			}
+			p{
+				.deskuop-text{
+					display: none;
+					@include media-breakpoint(small){
+						display: block;
+					}
+				}
+				.mobile-text{
+					display: block;
+					color: $brand;
+					font-weight: $font-bold;
+					@include media-breakpoint(mobile-big){
+						color: $gray;
+					}
+					@include media-breakpoint(small){
+						display: none;
+					}
+				}
+			}
+			.down-arrow{
+				top: 9px;
+   				right: 14px;
+				@include media-breakpoint(small){
+					top: 30px;
+					right: 30px;
+				}
+			}
+		}
+	}
+
+	
+    //Search Dripdown
+	ul{
+		&.available-option{
+			background: $white;
+			position: absolute;
+			min-width: 100%;
+			z-index: 9;
+			left: 0;
+			padding: 10px 0 0;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+			@include box-shadow(0px, 15px, $box-shadow-3, $box-shadow-color);
+			li{
+				display: block;
+				border-bottom: 1px solid #efefef;
+				padding: 8px 17px;
+				color: $gray;
+				font-weight: $font-regular;
+				&:last-child{
+					border-bottom: 0px;
+				}
+				i{
+					margin-right: 6px;
+					color: $gray;
+				}
+				&:hover{
+					background-color: $light-gray;
+					@include transition-duration(200ms);
+					cursor: pointer;
+					a{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+
+	.u-search{
+		width: $full-width;
+		height: $full-width;
+		text-transform: uppercase;
+		background-color: $brand;
+		border: 2px solid $brand;
+		outline: none;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		position: absolute;
+	    right: 0px;
+	    width: 62px;
+	    top: -65px;
+    	height: 55px;
+	    color: transparent;
+	    overflow: hidden;
+	    i{
+	    	font-size: $base-font-size + 10;
+	    	color: $white;
+		    float: right;
+		    position: absolute;
+		    left: 16px;
+	    	@include media-breakpoint(small){
+	    		display: none;
+	    		color: $white;
+	    	}
+	    }
+
+	    @include media-breakpoint(mobile-big){
+	    	top: -117px;
+	    }
+	    @include media-breakpoint(small){
+	    	width: 100%;
+	    	float: none;
+	    	height: 71px;
+	    	right: 0;
+	    	color: $white;
+	    	top: 0;
+	    }
+
+
+		@include transition-duration(200ms);
+		&:hover{
+			background-color: #1685c3;
+			border: 2px solid #1685c3;
+			outline: none;
+			color: transparent;
+			@include transition-duration(200ms);
+			@include media-breakpoint(small){
+				color: $white;
+			}
+		}
+		
+	}
+	.down-arrow{
+	    border: solid #C4C4C4;
+	    border-width: 0 2px 2px 0;
+	    display: inline-block;
+	    padding: 4px;
+	    transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		position: absolute;
+		right: 24px;
+		top: 30px;
+	}
+}

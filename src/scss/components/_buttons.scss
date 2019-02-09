@@ -1,0 +1,82 @@
+//Global Button Style
+
+.btn{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 18px;
+    cursor: pointer;
+    font-family: $font-familly-bold;
+    background: $brand-alt;
+    color: $white;
+    border-radius: 0px;
+    font-weight: $font-bold;
+    font-size: $base-font-size;
+    text-transform: capitalize;
+    border: 2px solid $brand-alt;
+    outline: none;
+    @include transition-duration(200ms);
+    &:hover{
+        @include transition-duration(200ms);
+        border: 2px solid $brand;
+        background: $white;
+        color: $brand;
+    }
+    &:active{
+        @include transition-duration(200ms);
+    }
+}
+
+//For Capitalize Button
+.btn-capitalize{
+    text-transform: uppercase;
+}
+
+//Small Button
+.btn-small{
+    font-size: $base-font-size - 3;
+    padding: 2px 11px;
+}
+
+//Button Brand
+.btn-brand{
+    background-color: $brand;
+    color: $white; 
+    border: 2px solid $brand;
+}
+.btn-white{
+    background-color: $white;
+    color: $brand; 
+    border: 2px solid $white;
+    &:hover{
+        border: 2px solid $brand;
+    }
+}
+.btn-white--border{
+    background-color: transparent;
+    color: $white; 
+    border: 2px solid $white;
+    &:hover{
+        border: 2px solid $brand;
+    }
+}
+//Blue OutLine
+.btn-outline-blue{
+    border: 2px solid $brand;
+    color: $brand;
+    background-color: $white;  
+    &:hover{
+        border: 2px solid $brand-alt;
+        background: $brand-alt;
+        color: $white;
+    }
+}
+
+.btn-outline-white{
+    border: 2px solid $white;
+    color: $white;
+    background-color: transparent;  
+    &:hover{
+        background-color: $white;
+        color: $brand;
+    }
+}
