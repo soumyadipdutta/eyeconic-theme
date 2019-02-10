@@ -61,12 +61,22 @@
     color: #657A8F;
     font-weight: 600;
     display: inline-block;
-    i{
-        background-color: #DBE1E6;
-        border-radius: 50%;
-        padding: 5px;
-        font-size: 8px;
-        margin-right: 5px;
+    position: relative;
+    &.tick{
+        padding: 5px 13px 5px 30px;
+        &:before{
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 8px;
+            top: 4px;
+            left: 6px;
+            background-color: rgba(96, 229, 84, 0.3);
+            padding: 4px 6px;
+            border-radius: 50%;
+            color: #00B30F;
+        }
     }
 
     &.green{
