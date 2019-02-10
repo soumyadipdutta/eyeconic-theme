@@ -22,11 +22,27 @@
   }
 
   &.eligibility{
-  	input[type="checkbox"]{
-  		appearance: none;
-  		-webkit-appearance: none;
-  		-moz-appearance: none;
-  		
+  	.c-check{
+  		display: none;
+  	}
+  	.triger-check{
+	    position: absolute;
+	    right: 10px;
+	    top: 7px;
+  		i{
+		    color: #B8C4D3;
+		    padding: 6px;
+		    background-color: #DFE7F1;
+		    border-radius: 50%;
+		    font-size: 14px;
+  		}
+  	}
+
+  	.c-check:checked ~ .triger-check{
+		background-color: #2196F3;
+  	}
+  	&:after{
+  		display: none;
   	}
   }
 }

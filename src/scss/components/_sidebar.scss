@@ -9,6 +9,7 @@
 	overflow-y: auto;
 	transition: all 500ms;
 	top: 0;
+	box-shadow: 0 0px 20px 0 #b7d0f7;
 }
 
 .c-mainapp{
@@ -21,6 +22,14 @@
 
 /*Sidebar Navigation*/
 .c-sidebar{
+	&__logo{
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+		img{
+			width: 110px;
+		}
+	}
 	&__nav{
 		padding-top: 50px;
 		&-list{
@@ -75,6 +84,11 @@
 				}
 			}
 		}
+		&-bottom{
+			position: absolute;
+		    bottom: 0;
+		    min-width: 100%;
+		}
 	}
 }
 
@@ -89,6 +103,12 @@
 		.c-sidebar{
 			min-width: 65px;
 			transition: all 500ms;
+			&__logo{
+				img{
+					transition: all 500ms;
+					width: 50px;
+				}
+			}
 		}
 		.c-mainapp{
 			margin-left: 65px;

@@ -10,7 +10,17 @@ $(document).ready(function(){
   $('.dropdown-nav').hide();
   $('.nav-header').click(function(){
     $(this).next().slideToggle();
-  })
+  });
+
+
+  $('.triger-check').click(function(){
+  	$('.c-check').trigger('click');
+  	//console.log('click');
+  });
+
+  if($('.c-check').is(':checked')){
+  	console.log('hello');
+  }
 });
 
 
