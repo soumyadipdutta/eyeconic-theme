@@ -1,118 +1,40 @@
 /*SIDEBAR*/
-
-.c-sidebar{
-	position: fixed;
-	min-width: 20%;
-	height: 100%;
-	background-color: #fff;
-	border-right: 1px solid #ddd;
-	overflow-y: auto;
-	transition: all 500ms;
-	top: 0;
-	box-shadow: 0 0px 20px 0 #b7d0f7;
-}
-
-.c-mainapp{
-	margin-left: 20%;
-	transition: all 500ms;
-	padding: 25px;
-}
-
-
-
-/*Sidebar Navigation*/
-.c-sidebar{
-	&__logo{
-		width: 100%;
-		text-align: center;
-		padding-top: 20px;
-		img{
-			width: 110px;
-		}
+.main-sidebar{
+	.sidebar-menu{
+		 li{
+		 	&.menu-header{
+		 		color: $blue-medium;
+		 	}
+		 	&.active{
+		 		a{
+		 			color: $blue-medium;
+		 		}
+		 	}
+		 	a{
+		 		color: $blue-light;
+		 		&:hover{
+		 			background-color: #F4F8FE;
+		 			color: $blue-medium;
+					font-weight: 600;
+		 		}
+		 	}
+		 }
 	}
-	&__nav{
-		padding-top: 50px;
-		&-list{
-			.nav-header{
-				font-family: $font-secondary;
-				display: block;
-				color: $blue-medium;
-				font-size: 12px;
-				font-weight: $base-font-weight + 600;
-				text-transform: uppercase;
-				margin-bottom: 10px;
-				position: relative;
-				padding-left: 15px;
-				padding-right: 15px;
-				span{
-					content: "/f107";
-				    font-family: "Font Awesome 5 Free";
-				    font-weight: 900;
-				    position: absolute;
-				    top: 50%;
-				    right: 20px;
-				    -webkit-transform: translate(0, -50%);
-				    transform: translate(0, -50%);
-				    font-size: 12px;
+}
+
+body:not(.sidebar-mini){
+	.sidebar-style-2{
+		.sidebar-menu {
+			> li.active {
+				> a:before{
+					height: 100%;
+				    background-color: $blue-medium;
 				}
 			}
-			.dropdown-nav{
-				margin: 10px 0;
-				li{
-					padding-left: 15px;
-					padding-right: 15px;
-					transition: all 500ms;
-					a{
-						font-family: $font-secondary;
-						color: $blue-light;
-						padding: 10px 0;
-						font-size: 14px;
-						font-weight: 400;
-						i{
-							margin-right: 6px;
-						}
-					}
-					&:hover{
-						background-color: #F4F8FE;
-						border-left: 4px solid $blue-medium;
-						transition: all 500ms;
-						a{
-							color: $blue-medium;
-							font-weight: 600;
-						}
-					}
-				}
-			}
-		}
-		&-bottom{
-			position: absolute;
-		    bottom: 0;
-		    min-width: 100%;
 		}
 	}
 }
 
-
-
-.o-app{
-	&.expand-main{
-		.c-header{
-			margin-left: 65px;
-			transition: all 500ms;
-		}
-		.c-sidebar{
-			min-width: 65px;
-			transition: all 500ms;
-			&__logo{
-				img{
-					transition: all 500ms;
-					width: 50px;
-				}
-			}
-		}
-		.c-mainapp{
-			margin-left: 65px;
-			transition: all 500ms;
-		}
-	}
+body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a{
+	background-color: $blue-medium;
 }

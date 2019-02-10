@@ -8,7 +8,7 @@
     font-family: $base-font-family;
     font-weight: $base-font-weight;
     font-size: 14px;
-    color: $grey-light;
+    color: #000;
     border: none;
     @include media-breakpoint(small){
       font-size: $base-font-size - 2;

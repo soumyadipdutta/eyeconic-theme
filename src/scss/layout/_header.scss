@@ -1,4 +1,12 @@
 //HEARER SECTION
+
+
+.navbar-bg{
+	background-color: $blue-dark;
+}
+
+
+
 .c-hambarger{
 	padding:0 5px;
 	i{
@@ -8,27 +16,12 @@
 }
 
 .c-usermain{
-	.dropdown{
-		button{
-			background-color: rgba(23, 96, 182, 0.55);
-			border: none;
-			font-size: 14px;
-    		padding: 8px 12px;
-    		border-radius: 3px;
-			span{
-    			margin-right: 5px;
-    			display: inline-block;
-    			overflow: hidden;
-    			border-radius: 50%;
-    			width: 28px;
-				height: 28px;
-				vertical-align: middle;
-				img{
-					width: 100%;
-					height: 100%;
-				}
-			}
-		}
+	.nav-link-user{
+		background-color: rgba(23, 96, 182, 0.55) !important;
+		border: none;
+		font-size: 14px;
+		padding: 6px 12px !important;
+		border-radius: 3px;
 	}
 }
 
