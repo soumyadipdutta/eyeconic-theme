@@ -67,12 +67,28 @@
   opacity: 0.2;
   z-index: 9;
   top: 0;
+  transition: all 500ms;
 }
 
 .c-search-eligibility{
   display: none;
   position: absolute;
-  background-color: #dfe7f1;
+  background-color: #fff;
   padding: 10px 20px;
   z-index: 99;
+  margin-top: -9px;
+  box-shadow: 0 0px 13px 0 #686464;
+  p{
+    margin-bottom: 0px;
+  }
+  .row{
+    align-items: center;
+  }
+  .btn{
+    font-size: 14px;
+    padding: 7px 25px;
+  }
+  .c-input{
+    border: 1px solid #ddd;
+  }
 }
