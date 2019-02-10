@@ -8,11 +8,13 @@
 	border-right: 1px solid #ddd;
 	overflow-y: auto;
 	transition: all 500ms;
+	top: 0;
 }
 
 .c-mainapp{
 	margin-left: 20%;
 	transition: all 500ms;
+	padding: 25px;
 }
 
 
@@ -50,6 +52,7 @@
 				li{
 					padding-left: 15px;
 					padding-right: 15px;
+					transition: all 500ms;
 					a{
 						font-family: $font-secondary;
 						color: $blue-light;
@@ -61,8 +64,13 @@
 						}
 					}
 					&:hover{
-						background-color: rgba(28, 113, 213, 0.2);
+						background-color: #F4F8FE;
 						border-left: 4px solid $blue-medium;
+						transition: all 500ms;
+						a{
+							color: $blue-medium;
+							font-weight: 600;
+						}
 					}
 				}
 			}
@@ -74,6 +82,10 @@
 
 .o-app{
 	&.expand-main{
+		.c-header{
+			margin-left: 65px;
+			transition: all 500ms;
+		}
 		.c-sidebar{
 			min-width: 65px;
 			transition: all 500ms;

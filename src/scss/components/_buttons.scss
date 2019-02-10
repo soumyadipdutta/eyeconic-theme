@@ -26,6 +26,23 @@
         background-color: $btn-disable;
         color: #657A8F;
     }
+
+    /*print icon*/
+    &.icon-print{
+        position: relative;
+        padding: 11px 25px 11px 40px;
+        &:before{
+            content: "\f02f";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 12px;
+            top: 14px;
+            border-radius: 50%;
+            color: #fff;
+            left: 22px;
+        }
+    }
 }
 
 .btn-borderoly{

@@ -1,1 +1,37 @@
 //SEARCH SECTION
+
+
+/**Search Field*/
+.c-search{
+  position: relative;
+  input{
+    padding-right: 40px;
+  }
+  &:after{
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 12px;
+    top: 7px;
+    right: 9px;
+    background-color: #ececec;
+    padding: 4px 7px;
+    border-radius: 50%;
+    color: #2879D9;
+  }
+
+  &.eligibility{
+  	input[type="checkbox"]{
+  		appearance: none;
+  		-webkit-appearance: none;
+  		-moz-appearance: none;
+  		
+  	}
+  }
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #6777ef !important;
+}

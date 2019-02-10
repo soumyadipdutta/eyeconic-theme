@@ -37,6 +37,8 @@
 	background-color: $blue-dark;
 	min-height: 50px;
 	padding: 12px 15px;
+	margin-left: 20%;
+	transition: all 500ms;
 	&_item{
 		display: inline-block;
 		vertical-align: middle;
