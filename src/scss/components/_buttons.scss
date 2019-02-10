@@ -2,27 +2,36 @@
 
 .btn{
     text-transform: uppercase;
-    padding: 4px 18px;
+    padding: 11px 25px;
     cursor: pointer;
     font-family: $base-font-family;
-    background: $brand-alt;
+    background-color: $blue-medium;
     color: $white;
     border-radius: 0px;
-    font-weight: $font-bold;
+    font-weight: 600;
     font-size: $base-font-size;
     text-transform: capitalize;
-    border: 2px solid $brand-alt;
     outline: none;
+    border-radius: 43px;
     @include transition-duration(200ms);
     &:hover{
         @include transition-duration(200ms);
-        border: 2px solid $brand;
-        background: $white;
-        color: $brand;
+        background: #0f71e8;
+        color: $white;
     }
     &:active{
         @include transition-duration(200ms);
     }
+    &.disable{
+        background-color: $btn-disable;
+        color: #657A8F;
+    }
+}
+
+.btn-borderoly{
+    border: 1px solid $blue-medium;
+    background-color: $white;
+    color: $blue-medium;
 }
 
 

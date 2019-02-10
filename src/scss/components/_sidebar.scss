@@ -53,13 +53,16 @@
 					a{
 						font-family: $font-secondary;
 						color: $blue-light;
-						padding: 5px 0;
+						padding: 10px 0;
 						font-size: 14px;
 						font-weight: 400;
+						i{
+							margin-right: 6px;
+						}
 					}
 					&:hover{
 						background-color: rgba(28, 113, 213, 0.2);
-						border-left: 2px solid $blue-medium;
+						border-left: 4px solid $blue-medium;
 					}
 				}
 			}
