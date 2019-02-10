@@ -21,6 +21,13 @@ $(document).ready(function(){
   if($('.c-check').is(':checked')){
   	console.log('hello');
   }
+
+
+  if($('.c-check').prop('checked')) {
+      console.log('hello');
+  } else {
+     console.log('hello');
+  }
 });
 
 

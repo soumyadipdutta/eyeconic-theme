@@ -101,6 +101,27 @@
 
       <!-- Main Content -->
       <div class="main-content">
+        <!-- Start Eligibility Search -->
+        <div class="c-search-eligibility">
+            <div class="row">
+              <div class="col-md-2">
+                <p>Eligibility Search</p>
+              </div>
+              <div class="col">
+                <input type="text" class="c-input" placeholder="First Name*" />
+              </div>
+              <div class="col">
+                <input type="text" class="c-input" placeholder="Last Name*" />
+              </div>
+              <div class="col">
+                <input type="text" class="c-input" placeholder="Date of Birth*" />
+              </div>
+              <div class="col-md-2">
+                <button type="submit" class="btn btn-primary brn-search" onclick="searchnow()">Search Now</button>
+              </div>
+            </div>
+        </div>
+        <!-- End Eligibility Search -->
         <section class="section">
           <div class="section-header">
             <h1>Tab</h1>
@@ -110,12 +131,7 @@
               <div class="breadcrumb-item">Tab</div>
             </div>
           </div>
-
-          
           <div class="card">
-            <div class="card-header">
-              <h4>Patient Database:</h4>
-            </div>
             <div class="card-body p-0">
               <table class="table eyeconic-table">
                 <thead>
@@ -225,8 +241,6 @@
               </table>
             </div>
           </div>
-
-    
         </section>
       </div>
       <footer class="main-footer">
@@ -262,5 +276,29 @@
   <!-- Template JS File -->
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/custom.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.triger-check').click(function(){
+      $('.c-check').trigger('click');
+      //console.log('click');
+    });
+     $(".c-check").on('change', function() {
+          if($(this).prop('checked')) {
+              console.log("Checked Box Selected");
+              $('.triger-check').addClass('active');
+              $('.main-content').prepend('<div class="search-overlay">');
+              $('.c-search-eligibility').slideDown('slow');
+          } else {
+              console.log("Checked Box deselect");
+              $('.triger-check').removeClass('active');
+              $('.search-overlay').remove();
+          }
+      });
+  });
+
+</script>
+
+  
 </body>
 </html>
